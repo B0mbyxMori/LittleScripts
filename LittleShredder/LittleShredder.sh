@@ -1,12 +1,12 @@
 #!/bin/bash/
-# For unix flavors with shred installed.
+# For unix systems with shred installed.
 
 echo "WARNING: Will change file permissions and will delete protected data!"
 echo "Enter file name: "
-read fileName
+read FileName
 
 ## Start: LittleShreder!
-if shred -f -n 5 $fileName
+if shred -f -n 5 $FileName
 then
 	echo "Completed."
 	exit 0
